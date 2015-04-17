@@ -5,6 +5,6 @@ EXPORT 7077 4040 8080
 CMD ["java", \
      "-cp ::/spark/conf:/spark/lib/*", \
      "-Dspark.akka.logLifecycleEvents=true", \
-    "-Xms512m" ,"-Xmx512m", \
-    "org.apache.spark.deploy.master.Master", \
-    "--ip spark-master"]
+     "-Xms512m" ,"-Xmx512m", \
+     "org.apache.spark.deploy.master.Master", \
+     "--ip spark-master"]
