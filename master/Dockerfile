@@ -1,3 +1,3 @@
 FROM snufkin/spark-base
 
-CMD ["/spark/sbin/start-master.sh"]
+ENTRYPOINT ["/spark/sbin/start-master.sh"]
