@@ -7,4 +7,4 @@ CMD ["java", \
      "-Dspark.akka.logLifecycleEvents=true", \
      "-Xms512m" ,"-Xmx512m", \
      "org.apache.spark.deploy.master.Master", \
-     "-h", "localhost"]
+     "-h", "$SPARK_MASTER_SERVICE_HOST"]
