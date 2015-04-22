@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#echo nameserver $KUBE_DNS_SERVICE_HOST >> /etc/resolv.conf
+echo nameserver $KUBE_DNS_SERVICE_HOST >> /etc/resolv.conf
 
 java -cp /spark/conf:/spark/lib/* \
      -Dspark.akka.logLifecycleEvents=true \
