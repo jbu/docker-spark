@@ -29,7 +29,9 @@ RUN curl \
     --silent \
     -O \
     https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-latest-hadoop2.jar 
-    #&& \
-    #echo export SPARK_CLASSPATH=$SPARK_CLASSPATH:/spark/lib/gcs-connector-latest-hadoop2.jar > /spark/conf/spark-env.sh
+    && \
+    echo export SPARK_CLASSPATH=$SPARK_CLASSPATH:/spark/lib/gcs-connector-latest-hadoop2.jar > /spark/conf/spark-env.sh
 
 ADD core-site.xml /spark/conf/
+
+WORKDIR /spark
