@@ -4,3 +4,4 @@
 
 /spark/sbin/start-slave.sh spark://spark-master:7077
 
+tail -F /spark/logs/spark*
